@@ -1,0 +1,44 @@
+/* Container til alle albums */
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Afstand mellem album-bokse */
+  padding: 20px;
+  justify-content: center; /* Centrer bokse */
+}
+
+/* Styling af hvert album-boks */
+.album-card {
+  background-color: #f4f4f9; /* Lys baggrund */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Blød skygge */
+  padding: 20px;
+  width: 200px; /* Fast bredde til alle bokse */
+  text-align: center;
+}
+
+/* Knappen til at vise/skjule tracklisten */
+.album-card button {
+  background-color: #4CAF50; /* Grøn baggrund */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.album-card button:hover {
+  background-color: #45a049; /* Mørkere grøn ved hovering */
+}
+
+/* Trackliste styling */
+.album-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.album-card li {
+  text-align: left;
+}
